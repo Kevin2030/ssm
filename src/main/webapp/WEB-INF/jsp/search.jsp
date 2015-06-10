@@ -60,13 +60,13 @@ a:HOVER {
 					type : "POST",
 					url : "queryStudents",
 					data : "",
-					success : function(msg) {
-						var students = msg.data;
-						var sLength = msg.data.length;
+					success : function(result) {
+						var students = result.data;
+						var sLength = result.data.length;
 						var show = "<tr><th>姓名</th><th>密码</th></tr>";
 						for (var i = 0; i < sLength; i++) {
-							show += "<tr><td>" + msg.data[i].username
-									+ "</td><td>" + msg.data[i].password
+							show += "<tr><td>" + result.data[i].username
+									+ "</td><td>" + result.data[i].password
 									+ "</td></tr>";
 						}
 						console.log(show);

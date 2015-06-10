@@ -56,10 +56,10 @@ a:HOVER {
 			type : "POST",
 			url : "insert",
 			data : param,
-			success : function(msg) {
+			success : function(result) {
 				$("#username").val("");
 				$("#password").val("");
-				alert(msg.message);
+				alert(result.msg);
 			}
 		});
 	});

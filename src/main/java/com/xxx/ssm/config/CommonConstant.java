@@ -22,11 +22,11 @@ public class CommonConstant {
 	/**
 	 * 返回码
 	 */
-	public static final String RETURN_CODE = "code";
+	public static final String RETURN_CODE = "status";
 	/**
 	 * 返回值
 	 */
-	public static final String RETURN_MESSAGE = "message";
+	public static final String RETURN_MESSAGE = "msg";
 	/**
 	 * 返回数据
 	 */
