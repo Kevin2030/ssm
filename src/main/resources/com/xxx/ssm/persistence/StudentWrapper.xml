@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xxx.ssm.persistence.StudentWrapper">
+
+	<cache />
+
+	<select id="queryStudents" resultType="Student">
+		select username, password
+		from student
+	</select>
+
+	<update id="updateStudent" parameterType="Student" flushCache="true">
+		update student set password = #{password}
+		where username = #{username}
+	</update>
+
+	<insert id="insertStudent" parameterType="Student" flushCache="true">
+		insert into student (username,password)
+		values (#{username},
+		#{password})
+	</insert>
+
+	<delete id="deleteStudent" parameterType="Student" flushCache="true">
+		delete student where username = #{username}
+	</delete>
+
+</mapper>
