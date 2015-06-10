@@ -57,10 +57,9 @@ a:HOVER {
 			url : "insert",
 			data : param,
 			success : function(msg) {
-				console.log(msg.returnMessage);
 				$("#username").val("");
 				$("#password").val("");
-				alert(msg.returnMessage);
+				alert(msg.message);
 			}
 		});
 	});
