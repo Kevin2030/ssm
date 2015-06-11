@@ -52,8 +52,8 @@ public class CommonConstant {
 	 * 返回Code
 	 * 
 	 * @author Kai.Zhao
-	 * @date March. 30th, 2015
-	 * @since 1.0
+	 * @version 1.0
+	 * @see
 	 */
 	public class ReturnCode {
 		/**
