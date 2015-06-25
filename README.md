@@ -1,4 +1,4 @@
-# ssm
+# Spring4 MVC + Spring4 + Mybatis3(ssm)
 整合Spring4 MVC + Spring4 + Mybatis3框架
 # 注意
 1. 项目基于Spring注解主流配置；
