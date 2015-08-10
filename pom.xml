@@ -7,8 +7,10 @@
 	<packaging>war</packaging>
 	
 	<properties>
-		<spring_version>4.1.4.RELEASE</spring_version>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.build.sourceEncoding>${file_encoding}</project.build.sourceEncoding>
+		<file_encoding>UTF-8</file_encoding>
+		<java_source_version>1.7</java_source_version>
+		<java_target_version>1.7</java_target_version>
 	</properties>
 
 	<dependencies>
@@ -113,13 +115,11 @@
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.1</version>
+				<version>2.3.2</version>
 				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
-					<encoding>UTF-8</encoding>
+					<source>${java_source_version}</source>
+					<target>${java_target_version}</target>
 				</configuration>
 			</plugin>
 			<plugin>
