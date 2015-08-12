@@ -11,6 +11,7 @@
 		<file_encoding>UTF-8</file_encoding>
 		<java_source_version>1.7</java_source_version>
 		<java_target_version>1.7</java_target_version>
+		<spring_version>4.1.4.RELEASE</spring_version>
 	</properties>
 
 	<dependencies>
