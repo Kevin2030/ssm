@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.xxx</groupId>
 	<artifactId>ssm</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0</version>
 	<packaging>war</packaging>
 	
 	<properties>
@@ -12,13 +12,15 @@
 		<java_source_version>1.7</java_source_version>
 		<java_target_version>1.7</java_target_version>
 		<spring_version>4.1.4.RELEASE</spring_version>
+		<junit_version>4.11</junit_version>
+		<logback_version>1.1.2</logback_version>
 	</properties>
 
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.11</version>
+			<version>${junit_version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.commons</groupId>
@@ -33,12 +35,12 @@
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-core</artifactId>
-			<version>1.1.2</version>
+			<version>${logback_version}</version>
 		</dependency>
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
-			<version>1.1.2</version>
+			<version>${logback_version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.alibaba</groupId>
